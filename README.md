@@ -8,7 +8,7 @@ A Tampermonkey script designed to track the detailed submission status on ACS Pu
    - Edge: Install [Tampermonkey](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd).  
 
 2. **Install ACS Tracker Script**:  
-   Click [here](https://github.com/zhangkaihua88/ACS-Tracker/raw/refs/heads/main/acsTracker.user.js) to download the script, or directly install it from the [GreasyFork](https://greasyfork.org/) listing.
+   Click [here](https://github.com/zhangkaihua88/ACS-Tracker/raw/refs/heads/main/acsTracker.user.js) to download the script, or directly install it from the [GreasyFork](https://greasyfork.org/zh-CN/scripts/539931-acs-tracker) listing.
 
 
 ## Usage Guide
