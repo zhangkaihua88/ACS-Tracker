@@ -214,22 +214,24 @@ function createTable(data) {
 
 
 (function () {
-    listenForApiResponse('integration/s1/submissions/submissionInfo?')
-        .then(result => {
-            console.log('匹配的API响应:', result.data.response.result.submissionStatus.task);
-            // Attach the table to the page
-            const taskTableContainer = document.querySelector('.page-section__container');
-            const container = document.createElement('div');
-            container.style.overflowX = 'auto';
-            container.style.padding = '15px';
-            container.appendChild(createTable(result.data.response.result.submissionStatus.task));
+    while (true) {
+        listenForApiResponse('integration/s1/submissions/submissionInfo?')
+            .then(result => {
+                console.log('匹配的API响应:', result.data.response.result.submissionStatus.task);
+                // Attach the table to the page
+                const taskTableContainer = document.querySelector('.page-section__container');
+                const container = document.createElement('div');
+                container.style.overflowX = 'auto';
+                container.style.padding = '15px';
+                container.appendChild(createTable(result.data.response.result.submissionStatus.task));
 
-            // Insert the container as the first child of taskTableContainer
-            const firstChild = taskTableContainer.firstChild;
-            taskTableContainer.insertBefore(container, firstChild);
-        })
-        .catch(error => {
-            console.error('监听错误:', error.message);
-        });
+                // Insert the container as the first child of taskTableContainer
+                const firstChild = taskTableContainer.firstChild;
+                taskTableContainer.insertBefore(container, firstChild);
+            })
+            .catch(error => {
+                console.error('监听错误:', error.message);
+            });
+    }
 
 })();
