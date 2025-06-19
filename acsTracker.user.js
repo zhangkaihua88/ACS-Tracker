@@ -214,7 +214,7 @@ function createTable(data) {
 
 
 (function () {
-    listenForApiResponse('integration/s1/submissions/submissionInfo')
+    listenForApiResponse('integration/s1/submissions/submissionInfo?')
         .then(result => {
             console.log('匹配的API响应:', result.data.response.result.submissionStatus.task);
             // Attach the table to the page
