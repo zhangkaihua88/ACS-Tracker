@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ACS Tracker
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  track the detailed submission status on ACS Publishing Platform.
 // @author       zhangkaihua88
 // @match        *://publish.acs.org/app*
