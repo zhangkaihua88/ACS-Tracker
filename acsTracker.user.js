@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      1.0
 // @description  try to take over the world!
-// @author       You
+// @author       zhangkaihua88
 // @match        *://publish.acs.org/app/manuscript*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=acs.org
 // @grant        none
