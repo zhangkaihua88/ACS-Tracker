@@ -4,7 +4,7 @@
 // @version      1.0
 // @description  track the detailed submission status on ACS Publishing Platform.
 // @author       zhangkaihua88
-// @match        *://publish.acs.org/app/manuscript*
+// @match        *://publish.acs.org/app*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=acs.org
 // @grant        none
 // @license      Apache-2.0
