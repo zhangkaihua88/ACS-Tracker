@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ACS Tracker
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.2
 // @description  track the detailed submission status on ACS Publishing Platform.
 // @author       zhangkaihua88
 // @match        *://publish.acs.org/app*
@@ -17,7 +17,7 @@
  * @param {boolean} [captureAll=false] - 是否捕获所有匹配请求（否则只捕获第一个）
  * @returns {Promise<Object|Object[]>} - 包含响应数据的Promise（单个或数组）
  */
-function listenForApiResponse(targetString, timeout = 300000000000, captureAll = false) {
+function listenForApiResponse(targetString, timeout = 30000, captureAll = false) {
     return new Promise((resolve, reject) => {
         // 用于存储原始 fetch 和 XMLHttpRequest 方法
         const originalFetch = window.fetch;
@@ -214,21 +214,32 @@ function createTable(data) {
 
 
 (function () {
-    listenForApiResponse('integration/s1/submissions/submissionInfo?')
-        .then(result => {
-            console.log('匹配的API响应:', result.data.response.result.submissionStatus.task);
-            // Attach the table to the page
-            const taskTableContainer = document.querySelector('.page-section__container');
-            const container = document.createElement('div');
-            container.style.overflowX = 'auto';
-            container.style.padding = '15px';
-            container.appendChild(createTable(result.data.response.result.submissionStatus.task));
+    
+    function startListening() {
+        listenForApiResponse('integration/s1/submissions/submissionInfo?')
+            .then(result => {
+                console.log('匹配的API响应:', result.data.response.result.submissionStatus.task);
+                // Attach the table to the page
+                const taskTableContainer = document.querySelector('.page-section__container');
+                const container = document.createElement('div');
+                container.style.overflowX = 'auto';
+                container.style.padding = '15px';
+                container.appendChild(createTable(result.data.response.result.submissionStatus.task));
 
-            // Insert the container as the first child of taskTableContainer
-            const firstChild = taskTableContainer.firstChild;
-            taskTableContainer.insertBefore(container, firstChild);
-        })
-        .catch(error => {
-            console.error('监听错误:', error.message);
-        });
+                // Insert the container as the first child of taskTableContainer
+                const firstChild = taskTableContainer.firstChild;
+                taskTableContainer.insertBefore(container, firstChild);
+
+                // 监听结束后重新启动
+                startListening();
+            })
+            .catch(error => {
+                console.error('监听错误:', error.message);
+                // 出错后也尝试重新启动
+                startListening();
+            });
+    }
+
+    startListening();
+
 })();
