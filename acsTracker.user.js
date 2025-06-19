@@ -17,7 +17,7 @@
  * @param {boolean} [captureAll=false] - 是否捕获所有匹配请求（否则只捕获第一个）
  * @returns {Promise<Object|Object[]>} - 包含响应数据的Promise（单个或数组）
  */
-function listenForApiResponse(targetString, timeout = 30000, captureAll = false) {
+function listenForApiResponse(targetString, timeout = 300000000, captureAll = false) {
     return new Promise((resolve, reject) => {
         // 用于存储原始 fetch 和 XMLHttpRequest 方法
         const originalFetch = window.fetch;
