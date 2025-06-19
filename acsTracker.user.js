@@ -2,11 +2,12 @@
 // @name         ACS Tracker
 // @namespace    http://tampermonkey.net/
 // @version      1.0
-// @description  try to take over the world!
+// @description  track the detailed submission status on ACS Publishing Platform.
 // @author       zhangkaihua88
 // @match        *://publish.acs.org/app/manuscript*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=acs.org
 // @grant        none
+// @license      Apache-2.0
 // ==/UserScript==
 
 /**
