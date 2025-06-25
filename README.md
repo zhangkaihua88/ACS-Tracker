@@ -1,7 +1,7 @@
 # ACS Tracker
 A script designed to track the detailed submission status on the ACS Publishing Platform.
 
-**Note:** *ACS Tracker is not affiliated with or endorsed by the ACS. Use at your own risk.*
+**Note:** <span style="color: red; font-weight: bold; font-style: italic;">ACS Tracker is not affiliated with or endorsed by the ACS. Use at your own risk.</span>
 
 ## Installation
 1. **Install Tampermonkey**
@@ -32,7 +32,7 @@ A script designed to track the detailed submission status on the ACS Publishing 
 
 ## Status Interpretation
 
-*Disclaimer: The following interpretations are based on statistical analysis and personal inference, and may not fully reflect the actual workflow of the ACS system.*
+<span style="color: red; font-weight: bold; font-style: italic;">Disclaimer: The following interpretations are based on statistical analysis and personal inference, and may not fully reflect the actual workflow of the ACS system.</span>
 
 **Table Column Explanation:**
 - **Task Name:** The specific task in the workflow.
