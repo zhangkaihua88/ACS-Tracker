@@ -38,7 +38,7 @@ A script designed to track the detailed submission status on the ACS Publishing 
 - **Task Name:** The specific task in the workflow.
 - **Task Status Name:** Supplementary information for the Task Name, indicating the current status.
 - **Start:** The time when the task began.
-- **Completion:** The time when the task was completed.
+- **Completed:** The time when the task was completed.
 - **Due:** The duration taken to complete the task.
 
 **Notes on Statuses:**
