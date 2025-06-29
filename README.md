@@ -6,6 +6,7 @@ A script designed to track the detailed submission status on the ACS Publishing 
 <p align="center">
   <video src="img/Installation.mp4" width="500px"></video>
 </p>
+<video src="https://github.com/user-attachments/assets/485c490c-72e6-4cad-b26e-7b19276b43be" width="352" height="720"></video>
 
 ## Installation
 1. **Install Tampermonkey**
