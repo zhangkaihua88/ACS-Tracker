@@ -3,6 +3,10 @@ A script designed to track the detailed submission status on the ACS Publishing 
 
 **Note:** **_ACS Tracker is not affiliated with or endorsed by the ACS. Use at your own risk._**
 
+<p align="center">
+  <video src="img/Installation.mp4" width="500px"></video>
+</p>
+
 ## Installation
 1. **Install Tampermonkey**
    - Edge: Install [Tampermonkey](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd).  
@@ -17,9 +21,7 @@ A script designed to track the detailed submission status on the ACS Publishing 
 3. **Install ACS Tracker Script**  
    Click [here](https://github.com/zhangkaihua88/ACS-Tracker/raw/refs/heads/main/acsTracker.user.js) to automatically install the script, or install it directly from the [GreasyFork page](https://greasyfork.org/zh-CN/scripts/539931-acs-tracker).
 
-<p align="center">
-  <video src="img/Installation.mp4" width="500px"></video>
-</p>
+
 
 ## Usage Guide
 1. **Login to ACS Publishing**
