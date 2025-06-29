@@ -17,6 +17,8 @@ A script designed to track the detailed submission status on the ACS Publishing 
 3. **Install ACS Tracker Script**  
    Click [here](https://github.com/zhangkaihua88/ACS-Tracker/raw/refs/heads/main/acsTracker.user.js) to automatically install the script, or install it directly from the [GreasyFork page](https://greasyfork.org/zh-CN/scripts/539931-acs-tracker).
 
+![](img/Installation.mp4)
+
 ## Usage Guide
 1. **Login to ACS Publishing**
    Make sure you are logged into the ACS Publishing system at [ACS Publishing Login](https://publish.acs.org/app/login?code=1000).
