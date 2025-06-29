@@ -3,10 +3,7 @@ A script designed to track the detailed submission status on the ACS Publishing 
 
 **Note:** **_ACS Tracker is not affiliated with or endorsed by the ACS. Use at your own risk._**
 
-<p align="center">
-  <video src="img/Installation.mp4" width="500px"></video>
-</p>
-<video src="https://github.com/user-attachments/assets/485c490c-72e6-4cad-b26e-7b19276b43be" width="352" height="720"></video>
+<video src="https://github.com/user-attachments/assets/485c490c-72e6-4cad-b26e-7b19276b43be"></video>
 
 ## Installation
 1. **Install Tampermonkey**
