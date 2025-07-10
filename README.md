@@ -1,7 +1,11 @@
 # ACS Tracker
 A script designed to track the detailed submission status on the ACS Publishing Platform.
 
-为便于后续状态分析，烦请您在使用时候尽可能填写一下**问卷（[问卷链接](https://wj.qq.com/s2/23056574/3c90/)）**。非常感谢您的支持！（您的反馈将帮助我们改进脚本的功能和用户体验）
+**本方法已失效, 祝愿大家都能accept**
+
+**This method is no longer effective**
+
+<!-- 为便于后续状态分析，烦请您在使用时候尽可能填写一下**问卷（[问卷链接](https://wj.qq.com/s2/23056574/3c90/)）**。非常感谢您的支持！（您的反馈将帮助我们改进脚本的功能和用户体验） -->
 
 **Note:** **_ACS Tracker is not affiliated with or endorsed by the ACS. Use at your own risk._**
 
